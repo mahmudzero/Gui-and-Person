@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="161.0" prefWidth="445.0" style="-fx-background-color: aliceblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:Controller="Quiz 11.Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" text="Name:" />
+      <Label alignment="CENTER" layoutX="13.0" layoutY="40.0" text="Street:" />
+      <Label alignment="CENTER" layoutX="19.0" layoutY="66.0" text="City:" />
+      <TextField fx:id="inputName" alignment="CENTER" layoutX="70.0" layoutY="12.0" prefHeight="21.0" prefWidth="361.0" promptText="Johnny Appleseed">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="312.0" layoutY="66.0" text="ZIP:" />
+      <Label layoutX="210.0" layoutY="66.0" text="State:" />
+      <TextField fx:id="inputStreet" alignment="CENTER" layoutX="70.0" layoutY="38.0" prefHeight="21.0" prefWidth="361.0" promptText="0 Circular Drive">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="inputCity" alignment="CENTER" layoutX="70.0" layoutY="64.0" promptText="New York">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="inputZip" alignment="CENTER" layoutX="341.0" layoutY="64.0" prefHeight="21.0" prefWidth="90.0" promptText="###-#####">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="inputState" alignment="CENTER" layoutX="251.0" layoutY="64.0" prefHeight="21.0" prefWidth="41.0" promptText="NY">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Button fx:id="first" layoutX="79.0" layoutY="124.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="60.0" text="First" onMouseClicked="e -> addPerson()"/>
+      <Button fx:id="printToConsole" layoutX="362.0" layoutY="124.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="69.0" text="Print" />
+      <Button fx:id="last" layoutX="294.0" layoutY="124.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="60.0" text="Last" />
+      <Button fx:id="previous" layoutX="209.0" layoutY="124.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="79.0" text="Previous" />
+      <Button fx:id="next" layoutX="144.0" layoutY="124.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="60.0" text="Next" />
+      <Button fx:id="add" layoutX="14.0" layoutY="124.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="60.0" text="Add" />
+   </children>
+</Pane>
